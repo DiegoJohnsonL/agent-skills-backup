@@ -33,18 +33,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel/ai.git",
       "skillPath": "skills/use-ai-sdk/SKILL.md",
-      "skillFolderHash": "f6517124d724dcec554b31acc7c80bce9efa4490",
+      "skillFolderHash": "d8e09e2796e2a04a9c7f7cc8c5bbab8da76a77d9",
       "installedAt": "2026-01-26T18:22:19.551Z",
-      "updatedAt": "2026-01-26T18:22:19.551Z"
+      "updatedAt": "2026-02-16T20:43:51.594Z"
     },
     "agent-browser": {
       "source": "vercel-labs/agent-browser",
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
       "skillPath": "skills/agent-browser/SKILL.md",
-      "skillFolderHash": "055f4a89276ed2c51b335c2e492ce863afb0cf8f",
+      "skillFolderHash": "d9ed23aaf02a172820a8b42964cfe2d21e06e25b",
       "installedAt": "2026-01-27T16:52:51.345Z",
-      "updatedAt": "2026-01-27T16:52:51.345Z"
+      "updatedAt": "2026-02-16T20:43:13.204Z"
     },
     "find-skills": {
       "source": "vercel-labs/skills",
@@ -114,18 +114,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
       "skillPath": "skills/composition-patterns/SKILL.md",
-      "skillFolderHash": "7a651a19b1658c4cd320a5e984c1be4b99d97c2c",
+      "skillFolderHash": "bf90d0a4b83ea054653350f9c67f6de235d3a368",
       "installedAt": "2026-01-27T17:02:08.738Z",
-      "updatedAt": "2026-01-27T17:02:08.738Z"
+      "updatedAt": "2026-02-09T20:37:37.836Z"
     },
     "vercel-react-native-skills": {
       "source": "vercel-labs/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
       "skillPath": "skills/react-native-skills/SKILL.md",
-      "skillFolderHash": "f67a7156afdb6070594715ca0b4f12810ae32a1e",
+      "skillFolderHash": "8b4c6a51914e2111ab6f4f00cb81778652aa241d",
       "installedAt": "2026-01-27T17:02:32.429Z",
-      "updatedAt": "2026-01-27T17:02:32.429Z"
+      "updatedAt": "2026-02-09T20:37:40.023Z"
     },
     "next-best-practices": {
       "source": "vercel-labs/next-skills",
@@ -159,9 +159,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
       "skillPath": "skills/competitor-alternatives/SKILL.md",
-      "skillFolderHash": "f42cd8aab8da1f2067e8f6c865f57397d0ae4138",
+      "skillFolderHash": "2a2951f65fd6969854be3409ea66564d2574cb81",
       "installedAt": "2026-01-27T22:13:55.868Z",
-      "updatedAt": "2026-01-27T22:13:55.868Z"
+      "updatedAt": "2026-02-09T20:37:42.386Z"
     },
     "content-strategy": {
       "source": "coreyhaines31/marketingskills",
@@ -348,12 +348,57 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel/components.build.git",
       "skillPath": "skills/building-components/SKILL.md",
-      "skillFolderHash": "ad061a77b727e7ffc90500b89f9f359766f27d6d",
+      "skillFolderHash": "b7f8c5d9010b2f8cd1b4c9f250886264d5ce6d15",
       "installedAt": "2026-02-05T20:23:44.484Z",
-      "updatedAt": "2026-02-05T20:23:44.484Z"
+      "updatedAt": "2026-02-16T20:43:54.276Z"
+    },
+    "skill-creator": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "skillFolderHash": "a235030e055c7292a60525ead3c8b06fb2bcf831",
+      "installedAt": "2026-02-09T20:36:43.239Z",
+      "updatedAt": "2026-02-09T20:36:43.239Z"
+    },
+    "tdd": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "tdd/SKILL.md",
+      "skillFolderHash": "28d7822c112f22cf499099881856fdec07bc83a8",
+      "installedAt": "2026-02-16T20:58:15.708Z",
+      "updatedAt": "2026-02-16T20:58:15.708Z"
+    },
+    "knip": {
+      "source": "brianlovin/claude-config",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/brianlovin/claude-config.git",
+      "skillPath": "skills/knip/SKILL.md",
+      "skillFolderHash": "3064a4500e57a233b8aab475ddff0f59f1b81fe5",
+      "installedAt": "2026-02-18T19:06:17.219Z",
+      "updatedAt": "2026-02-18T19:06:17.219Z"
+    },
+    "react-doctor": {
+      "source": "millionco/react-doctor",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/millionco/react-doctor.git",
+      "skillPath": "skills/react-doctor/SKILL.md",
+      "skillFolderHash": "868e96eab2f8e2be1e6069530d34a40a5a8ccbdc",
+      "installedAt": "2026-02-18T19:26:33.708Z",
+      "updatedAt": "2026-02-18T19:26:33.708Z"
     }
   },
   "dismissed": {
     "findSkillsPrompt": true
-  }
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "codex",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "claude-code"
+  ]
 }

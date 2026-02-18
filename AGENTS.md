@@ -34,9 +34,8 @@ Fight entropy. Leave the codebase better than you found it.
 
 ## Plan Mode
 
-- Make the plan extremely concise. Sacrifice grammar for the sake of concision.
+- Make the plan concise. Sacrifice grammar for the sake of concision.
 - At the end of each plan, give me a list of unresolved questions to answer, if any.
-- Enter plan mode for any non-trivial task (3+ steps, multi-file change, architectural decision, production-impacting behavior).
 - Include verification steps in the plan (not as an afterthought).
 - If new information invalidates the plan: **stop**, update the plan, then continue.
 - Write a crisp spec first when requirements are ambiguous (inputs/outputs, edge cases, success criteria).
@@ -49,9 +48,29 @@ Fight entropy. Leave the codebase better than you found it.
 - When feasible, keep changes behind feature flags, config switches, or safe defaults.
 
 ### Self-Improvement Loop
-- After any user correction or a discovered mistake, add a new entry to `tasks/lessons.md` capturing:
-  - the failure mode, the detection signal, and a prevention rule.
-- Review `tasks/lessons.md` at session start and before major refactors.
+- Lesson storage location:
+  - Always write lessons to `~/.agents/tasks/lessons.md`.
+  - Do not create or update per-project `tasks/lessons.md` files.
+- Capture a lesson only when all are true:
+  - The miss caused a real bug/regression, broken build/test, data/security risk, or significant rework.
+  - The prevention rule is reusable across future tasks (not a one-off UI/copy preference).
+  - The rule is actionable and verifiable.
+- Do not capture lessons for:
+  - one-off design/copy preferences or subjective styling tweaks.
+  - minor wording/layout changes with no engineering risk.
+  - repeated variants of an already captured root cause.
+- Dedupe before append:
+  - Search `~/.agents/tasks/lessons.md` for the same root cause first.
+  - If similar exists, update/merge the existing entry instead of creating a new one.
+  - Keep one lesson per root-cause family.
+- Caps:
+  - Max 1 new lesson per task/PR.
+  - Max 3 new lessons per day.
+  - If more issues occur, add one merged lesson that captures the shared root cause.
+- Keep `~/.agents/tasks/lessons.md` lean:
+  - Target 20-40 active lessons.
+  - Keep each entry to 3 bullets: failure mode, detection signal, prevention rule.
+- Review `~/.agents/tasks/lessons.md` at session start and before major refactors.
 
 ### Verification Before "Done"
 - Never mark complete without evidence: tests, lint/typecheck, build, logs, or a deterministic manual repro.
