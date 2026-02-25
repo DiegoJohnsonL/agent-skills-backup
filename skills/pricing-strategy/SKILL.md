@@ -1,7 +1,8 @@
 ---
 name: pricing-strategy
-version: 1.0.0
 description: "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingness to pay,' or 'monetization.' This skill covers pricing research, tier structure, and packaging strategy."
+metadata:
+  version: 1.0.0
 ---
 
 # Pricing Strategy
@@ -221,6 +222,7 @@ Identifies which features customers value most:
 
 ## Related Skills
 
+- **churn-prevention**: For cancel flows, save offers, and reducing revenue churn
 - **page-cro**: For optimizing pricing page conversion
 - **copywriting**: For pricing page copy
 - **marketing-psychology**: For pricing psychology principles
