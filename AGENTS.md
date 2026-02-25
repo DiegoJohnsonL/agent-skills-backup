@@ -13,6 +13,11 @@ Fight entropy. Leave the codebase better than you found it.
 - **Prove it works**: "Seems right" is not done. Validate with tests/build/lint and/or a reliable manual repro.
 - **Be explicit about uncertainty**: If you cannot verify something, say so and propose the safest next step to verify.
 
+## tRPC + React Query Rules
+
+- For server-side query prefetching, **never await** `prefetchQuery` / `prefetchInfiniteQuery`.
+- When a server component prefetches a query for a client surface, consume it with suspense on the client (`useSuspenseQuery` or equivalent suspense hook).
+
 ## Plan Mode
 
 - At the end of each plan, give me a list of unresolved questions to answer, if any.
