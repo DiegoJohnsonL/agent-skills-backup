@@ -405,6 +405,15 @@
       "skillFolderHash": "2038777ac712210075a30b45be7c5a705a76c0b2",
       "installedAt": "2026-02-24T16:12:21.517Z",
       "updatedAt": "2026-02-24T16:12:21.517Z"
+    },
+    "workflow": {
+      "source": "vercel/workflow",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/workflow.git",
+      "skillPath": "skills/workflow/SKILL.md",
+      "skillFolderHash": "483a47f89c7212e6bb43cb9af5c10b7274ef81a3",
+      "installedAt": "2026-02-25T23:46:20.831Z",
+      "updatedAt": "2026-02-25T23:46:20.831Z"
     }
   },
   "dismissed": {
