@@ -1,33 +1,6 @@
 {
   "version": 3,
   "skills": {
-    "capture-api-response-test-fixture": {
-      "source": "vercel/ai",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/vercel/ai.git",
-      "skillPath": "skills/capture-api-response-test-fixture/SKILL.md",
-      "skillFolderHash": "61b3f14a57a20eb38f7c81f801fc7de4623107b9",
-      "installedAt": "2026-01-26T18:22:18.431Z",
-      "updatedAt": "2026-01-26T18:22:18.431Z"
-    },
-    "develop-ai-functions-example": {
-      "source": "vercel/ai",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/vercel/ai.git",
-      "skillPath": "skills/develop-ai-functions-example/SKILL.md",
-      "skillFolderHash": "aa21e8b4dd2cb9e752817301fb5311092ad4f8c1",
-      "installedAt": "2026-01-26T18:22:18.808Z",
-      "updatedAt": "2026-01-26T18:22:18.808Z"
-    },
-    "list-npm-package-content": {
-      "source": "vercel/ai",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/vercel/ai.git",
-      "skillPath": "skills/list-npm-package-content/SKILL.md",
-      "skillFolderHash": "ce28646c705808a82b9175254ae724c7a1d3b092",
-      "installedAt": "2026-01-26T18:22:19.185Z",
-      "updatedAt": "2026-01-26T18:22:19.185Z"
-    },
     "ai-sdk": {
       "source": "vercel/ai",
       "sourceType": "github",
@@ -35,16 +8,16 @@
       "skillPath": "skills/use-ai-sdk/SKILL.md",
       "skillFolderHash": "d8e09e2796e2a04a9c7f7cc8c5bbab8da76a77d9",
       "installedAt": "2026-01-26T18:22:19.551Z",
-      "updatedAt": "2026-02-16T20:43:51.594Z"
+      "updatedAt": "2026-03-03T16:32:43.530Z"
     },
     "agent-browser": {
       "source": "vercel-labs/agent-browser",
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
       "skillPath": "skills/agent-browser/SKILL.md",
-      "skillFolderHash": "3a1c4b034cd40e0e0e69778b1a45dc50778ec2ec",
+      "skillFolderHash": "88b7e785240d14ab80eb11abdd0cbd27b20055c6",
       "installedAt": "2026-01-27T16:52:51.345Z",
-      "updatedAt": "2026-02-23T15:34:06.046Z"
+      "updatedAt": "2026-03-03T16:17:13.713Z"
     },
     "find-skills": {
       "source": "vercel-labs/skills",
@@ -60,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
       "skillPath": "skills/react-best-practices/SKILL.md",
-      "skillFolderHash": "079b06a135401704ea94ab74c7c9d86c92ba259f",
+      "skillFolderHash": "fce8b5a24ff4ff2fc5db6aa1051e03b53c6b5bf1",
       "installedAt": "2026-01-27T16:53:23.204Z",
-      "updatedAt": "2026-01-27T16:53:23.204Z"
+      "updatedAt": "2026-03-03T16:17:16.664Z"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",
@@ -81,33 +54,6 @@
       "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
       "installedAt": "2026-01-27T16:54:19.309Z",
       "updatedAt": "2026-02-05T01:17:14.348Z"
-    },
-    "seo-audit": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/seo-audit/SKILL.md",
-      "skillFolderHash": "dc552e42e75a1a2f5e7c44946afb281c0a5a2bd0",
-      "installedAt": "2026-01-27T16:56:26.336Z",
-      "updatedAt": "2026-02-23T15:34:08.958Z"
-    },
-    "marketing-psychology": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/marketing-psychology/SKILL.md",
-      "skillFolderHash": "796713a671d6801d294bc14f2312863c8e36748e",
-      "installedAt": "2026-01-27T16:57:00.884Z",
-      "updatedAt": "2026-02-23T15:34:11.547Z"
-    },
-    "copywriting": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/copywriting/SKILL.md",
-      "skillFolderHash": "e8743e6412ab1d56520a467f96c09571695e88a9",
-      "installedAt": "2026-01-27T16:57:11.781Z",
-      "updatedAt": "2026-02-23T15:34:14.446Z"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
@@ -136,204 +82,6 @@
       "installedAt": "2026-01-27T17:02:46.264Z",
       "updatedAt": "2026-01-27T17:02:46.264Z"
     },
-    "ab-test-setup": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/ab-test-setup/SKILL.md",
-      "skillFolderHash": "a9891631e56f1fba0a8001816a6e431f68a79bea",
-      "installedAt": "2026-01-27T22:13:55.496Z",
-      "updatedAt": "2026-02-23T15:34:17.258Z"
-    },
-    "analytics-tracking": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/analytics-tracking/SKILL.md",
-      "skillFolderHash": "399f34aedff18b8cc5bf80fa3b93a17eb98257a5",
-      "installedAt": "2026-01-27T22:13:55.682Z",
-      "updatedAt": "2026-02-23T15:34:19.994Z"
-    },
-    "competitor-alternatives": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/competitor-alternatives/SKILL.md",
-      "skillFolderHash": "96dad0972032ed59a7710681cdff70e3a3c40ca0",
-      "installedAt": "2026-01-27T22:13:55.868Z",
-      "updatedAt": "2026-02-23T15:34:22.866Z"
-    },
-    "content-strategy": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/content-strategy/SKILL.md",
-      "skillFolderHash": "97dd0bc63bc24d97d523100812433d26ff1ca0d8",
-      "installedAt": "2026-01-27T22:13:56.052Z",
-      "updatedAt": "2026-02-23T15:34:25.879Z"
-    },
-    "copy-editing": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/copy-editing/SKILL.md",
-      "skillFolderHash": "44c9580660ede5bdb8d942e3f7c8a6b0c2252f01",
-      "installedAt": "2026-01-27T22:13:56.236Z",
-      "updatedAt": "2026-02-23T15:34:28.406Z"
-    },
-    "email-sequence": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/email-sequence/SKILL.md",
-      "skillFolderHash": "acd6ac366ab1f4ea3c48f5496e58d17937c00423",
-      "installedAt": "2026-01-27T22:13:56.609Z",
-      "updatedAt": "2026-02-23T15:34:31.238Z"
-    },
-    "form-cro": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/form-cro/SKILL.md",
-      "skillFolderHash": "847ec05cf4ba1f1c81e640adf35374e10118e4b4",
-      "installedAt": "2026-01-27T22:13:56.794Z",
-      "updatedAt": "2026-02-23T15:34:34.071Z"
-    },
-    "free-tool-strategy": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/free-tool-strategy/SKILL.md",
-      "skillFolderHash": "e60294272dd5ebc225af9739c6e9565b5db18665",
-      "installedAt": "2026-01-27T22:13:56.980Z",
-      "updatedAt": "2026-02-23T15:34:37.402Z"
-    },
-    "launch-strategy": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/launch-strategy/SKILL.md",
-      "skillFolderHash": "645f392b2bea0a179a7df666bcfab98bcdef35cd",
-      "installedAt": "2026-01-27T22:13:57.165Z",
-      "updatedAt": "2026-02-23T15:34:40.511Z"
-    },
-    "marketing-ideas": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/marketing-ideas/SKILL.md",
-      "skillFolderHash": "f4739f0713096483f110f1eb0ce14ef0ecc07299",
-      "installedAt": "2026-01-27T22:13:57.351Z",
-      "updatedAt": "2026-02-23T15:34:43.581Z"
-    },
-    "onboarding-cro": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/onboarding-cro/SKILL.md",
-      "skillFolderHash": "f919d11141c511ca5bff8e636b64fd0b1bfd9095",
-      "installedAt": "2026-01-27T22:13:57.716Z",
-      "updatedAt": "2026-02-23T15:34:46.494Z"
-    },
-    "page-cro": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/page-cro/SKILL.md",
-      "skillFolderHash": "ec88cb6891e324c5ab8d3b2d22bf053e9950d068",
-      "installedAt": "2026-01-27T22:13:57.901Z",
-      "updatedAt": "2026-02-23T15:34:49.567Z"
-    },
-    "paid-ads": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/paid-ads/SKILL.md",
-      "skillFolderHash": "52eba3c857d668d1577de0c7b6908ac42a8e1cdd",
-      "installedAt": "2026-01-27T22:13:58.083Z",
-      "updatedAt": "2026-02-23T15:34:52.219Z"
-    },
-    "paywall-upgrade-cro": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/paywall-upgrade-cro/SKILL.md",
-      "skillFolderHash": "61b6dd684b3e344ee5ceaec2e558254d89ec6be8",
-      "installedAt": "2026-01-27T22:13:58.266Z",
-      "updatedAt": "2026-02-23T15:34:55.076Z"
-    },
-    "popup-cro": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/popup-cro/SKILL.md",
-      "skillFolderHash": "233f2e9b59e52ca468529192013d546399dbdff8",
-      "installedAt": "2026-01-27T22:13:58.451Z",
-      "updatedAt": "2026-02-23T15:34:57.992Z"
-    },
-    "pricing-strategy": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/pricing-strategy/SKILL.md",
-      "skillFolderHash": "8548c2bf04c2a28ea183ce2d568d7b4e94b9780f",
-      "installedAt": "2026-01-27T22:13:58.635Z",
-      "updatedAt": "2026-02-23T15:35:00.804Z"
-    },
-    "product-marketing-context": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/product-marketing-context/SKILL.md",
-      "skillFolderHash": "ea806b9c86cd855cbee247a0741bf919807612d2",
-      "installedAt": "2026-01-27T22:13:58.820Z",
-      "updatedAt": "2026-02-23T15:35:03.585Z"
-    },
-    "programmatic-seo": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/programmatic-seo/SKILL.md",
-      "skillFolderHash": "40b2aa2df0e24d4c5be0b5bd8c116d266e819784",
-      "installedAt": "2026-01-27T22:13:59.004Z",
-      "updatedAt": "2026-02-23T15:35:06.507Z"
-    },
-    "referral-program": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/referral-program/SKILL.md",
-      "skillFolderHash": "d07b5538b5f7dd95e7147c6e133070d1fe362426",
-      "installedAt": "2026-01-27T22:13:59.194Z",
-      "updatedAt": "2026-02-23T15:35:09.213Z"
-    },
-    "schema-markup": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/schema-markup/SKILL.md",
-      "skillFolderHash": "aa4a6104e1b33130c85d681129ee334a073971d4",
-      "installedAt": "2026-01-27T22:13:59.380Z",
-      "updatedAt": "2026-02-23T15:35:13.259Z"
-    },
-    "signup-flow-cro": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/signup-flow-cro/SKILL.md",
-      "skillFolderHash": "6da9ef3ed668c6b97929774700419e6610b1c388",
-      "installedAt": "2026-01-27T22:13:59.746Z",
-      "updatedAt": "2026-02-23T15:35:15.912Z"
-    },
-    "social-content": {
-      "source": "coreyhaines31/marketingskills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
-      "skillPath": "skills/social-content/SKILL.md",
-      "skillFolderHash": "eb3aac0155ffaf2ebd68880f19049f20fb99047a",
-      "installedAt": "2026-01-27T22:13:59.931Z",
-      "updatedAt": "2026-02-23T15:35:18.777Z"
-    },
     "ai-elements": {
       "source": "vercel/ai-elements",
       "sourceType": "github",
@@ -341,7 +89,7 @@
       "skillPath": "skills/ai-elements/SKILL.md",
       "skillFolderHash": "85b673815a592ad573cb9174ad77c4e84510ee4a",
       "installedAt": "2026-02-05T13:32:46.376Z",
-      "updatedAt": "2026-02-23T15:33:31.772Z"
+      "updatedAt": "2026-03-03T16:32:04.525Z"
     },
     "building-components": {
       "source": "vercel/components.build",
@@ -402,9 +150,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel/vercel.git",
       "skillPath": "skills/vercel-cli/SKILL.md",
-      "skillFolderHash": "2038777ac712210075a30b45be7c5a705a76c0b2",
+      "skillFolderHash": "fbcf4aa7a9a79174a6b3b43663d68f25a5031db0",
       "installedAt": "2026-02-24T16:12:21.517Z",
-      "updatedAt": "2026-02-24T16:12:21.517Z"
+      "updatedAt": "2026-03-03T16:25:03.977Z"
     },
     "workflow": {
       "source": "vercel/workflow",
@@ -421,6 +169,7 @@
   },
   "lastSelectedAgents": [
     "amp",
+    "cline",
     "codex",
     "cursor",
     "gemini-cli",
