@@ -15,10 +15,6 @@ Fight entropy. Leave the codebase better than you found it.
 - Before any TypeScript work, type-related refactor, type review, or schema/API typing change, load and follow the `quality-code` skill
 - Avoid suppressions (`any`, ignores) unless the project explicitly permits and you have no alternative.
 
-## Dependency Discipline
-- Do not add new dependencies unless the existing stack cannot solve it cleanly and the benefit is clear.
-- Prefer standard library / existing utilities.
-
 ## Git Commits
 - Always use conventional commits with gitmojis
 
