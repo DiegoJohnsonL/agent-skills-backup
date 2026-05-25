@@ -297,6 +297,25 @@
       "skillFolderHash": "6d2dbc37eccb5d89902bda605f1a8bdbad7f36d8",
       "installedAt": "2026-05-17T18:33:00.608Z",
       "updatedAt": "2026-05-24T16:55:10.895Z"
+    },
+    "setup-matt-pocock-skills": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "skillFolderHash": "77638955bebe492948244f1338e54ca1a9445c29",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-05-24T21:46:47.191Z",
+      "updatedAt": "2026-05-24T21:46:47.191Z"
+    },
+    "trpc-router": {
+      "source": "trpc/trpc",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/trpc/trpc.git",
+      "skillPath": "packages/server/skills/trpc-router/SKILL.md",
+      "skillFolderHash": "211851e703fd7464d31fc4ae8150291afac9a56b",
+      "installedAt": "2026-05-25T14:19:17.100Z",
+      "updatedAt": "2026-05-25T14:19:17.100Z"
     }
   },
   "dismissed": {
