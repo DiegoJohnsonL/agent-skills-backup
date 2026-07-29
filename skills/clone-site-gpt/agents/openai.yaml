@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clone Site GPT"
+  short_description: "Clone a live site with Codex CLI subagents"
+  default_prompt: "Use $clone-site-gpt to clone this URL with Codex CLI subagents."
+
+policy:
+  allow_implicit_invocation: false
