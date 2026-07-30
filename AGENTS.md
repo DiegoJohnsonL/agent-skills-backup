@@ -1,3 +1,5 @@
+> Setting up a new device? Follow [SETUP.md](./SETUP.md) — symlinks, skills, and theme, step by step.
+
 ## General Prefernces
 - Always use conventional commits with gitmojis
 - When reporting information to me, be concise. Sacrifice grammar for the sake of concision.
