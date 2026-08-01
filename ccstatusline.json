@@ -1,0 +1,87 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "1",
+        "type": "current-working-dir",
+        "color": "cyan",
+        "bold": true,
+        "rawValue": true,
+        "metadata": {
+          "fishStyle": "true"
+        }
+      },
+      {
+        "id": "2",
+        "type": "separator",
+        "character": " \u00b7 "
+      },
+      {
+        "id": "3",
+        "type": "git-branch",
+        "color": "magenta",
+        "rawValue": true,
+        "metadata": {
+          "hideNoGit": "true"
+        }
+      },
+      {
+        "id": "4",
+        "type": "separator",
+        "character": " \u00b7 "
+      },
+      {
+        "id": "5",
+        "type": "context-length",
+        "color": "white",
+        "rawValue": true,
+        "merge": true
+      },
+      {
+        "id": "6",
+        "type": "custom-text",
+        "color": "white",
+        "customText": "/",
+        "merge": true
+      },
+      {
+        "id": "7",
+        "type": "context-window",
+        "color": "white",
+        "rawValue": true
+      },
+      {
+        "id": "8",
+        "type": "separator",
+        "character": " \u00b7 "
+      },
+      {
+        "id": "9",
+        "type": "context-percentage",
+        "color": "cyan",
+        "bold": true,
+        "rawValue": true
+      }
+    ],
+    [],
+    []
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [],
+    "endCaps": [],
+    "autoAlign": false
+  }
+}
