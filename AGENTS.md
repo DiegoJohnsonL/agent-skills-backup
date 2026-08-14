@@ -1,23 +1,23 @@
-## General Prefernces
+## General Preferences
 - Always use conventional commits with gitmojis
 - When reporting information to me, be concise. Sacrifice grammar for the sake of concision.
 - Always talk in ASD-STE100 Simplified Technical English. Always read CONTEXT.md files, and use their ubiquitous language.
 - Do not preserve backward compatibility. Remove obsolete paths instead of adding compatibility layers, fallbacks, or migrations.
-- Choose the simpliest implementation that fully meets the current requirements. Avoid speculatives abstractions, configuration, and indirection.
+- Choose the simplest implementation that fully meets the current requirements. Avoid speculative abstractions, configuration, and indirection.
 - I love to build. I like ambitious ideas, simple systems, and software that feels obvious. I focus on building complex things as simple as possible, and I love to find ways to reduce complexity when solving problems.
 - Do not preserve complexity just because it already exists. Do not introduce machinery because it looks architecturally impressive. Understand the real constraint, then fight for the smallest model that makes the correct behavior unsurprising.
 - Grow the system in layers. Start from the smallest version that works end to end, and add each new capability on top of a product that already works. Never trade a working product for unfinished complexity.
-- Keep components modular and concerns clearly separaded.
-- Prefer established, well-mantained libraries when they reduce overall complexity or improve reliability. Do not reimplement common functionality without a clear reason.
+- Keep components modular and concerns clearly separated.
+- Prefer established, well-maintained libraries when they reduce overall complexity or improve reliability. Do not reimplement common functionality without a clear reason.
 - Lean on the dependencies already in the project before writing your own implementation or adding packages. Do not assume a library lacks a capability without checking its documentation and types.
-- Make architectural decision for the long term. Do not accept a stopgap that only works for now and is meant to be replaced later.
-- Avoid leaving comments inside the codebase. code should be self-explenatory.
+- Make architectural decisions for the long term. Do not accept a stopgap that only works for now and is meant to be replaced later.
+- Avoid leaving comments inside the codebase. Code should be self-explanatory.
 - When deciding where to add code fallbacks or safeguards, zoom-out to understand the full flow of the project or feature and then decide if the case would actually happen or not.
 - When using tRPC with react query:
     - for server-side query prefetching, **never await** `prefetchQuery` / `prefetchInfiniteQuery`.
     - When a server component prefetches a query for a client, consume it with suspense on the client `useSuspenseQuery`.
 - My pull requests preferences:
     - They should be simple and easy to understand. Conventional commit style in projects that use them.
-    - PR descriptions should aim for simplicity. Open with minimal clear description of the problem. follow up with how you solved it.
-    - Add a blurp to the end of the PR description about what model and harness is making the change.
+    - PR descriptions should aim for simplicity. Open with minimal clear description of the problem. Follow up with how you solved it.
+    - Add a blurb to the end of the PR description about what model and harness is making the change.
     - Rebase onto the last base branch before opening. Stale branches conflict and waste a review round
