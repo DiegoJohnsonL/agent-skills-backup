@@ -2,8 +2,6 @@
 name: react-doctor
 description: Use when finishing a feature, fixing a bug, before committing React code, or when the user types `/doctor`, asks to scan, triage, or clean up React diagnostics. Covers lint, accessibility, bundle size, architecture. Includes a regression check and a full local-triage workflow that fetches the canonical playbook.
 version: "1.2.0"
-disable-model-invocation: true
-user-invocable: true
 ---
 
 # React Doctor
@@ -19,6 +17,10 @@ If the score dropped, fix the regressions before committing.
 ## For general cleanup or code improvement:
 
 Run `npx react-doctor@latest --verbose` (the default `--scope full`) to scan the full codebase. Fix issues by severity — errors first, then warnings.
+
+## For a focused UI design audit:
+
+Run `npx react-doctor@latest design --verbose`. This selects only design-tagged UI composition, typography, interaction, accessibility, and motion rules, including focused rules that remain opt-in during a general health scan.
 
 ## /doctor — full local triage workflow
 
@@ -51,3 +53,4 @@ npx react-doctor@latest --verbose --scope changed
 | `--scope changed` | Only report issues introduced vs the base branch (default: full) |
 | `--scope lines`   | Only report issues on the changed lines                          |
 | `--score`         | Output only the numeric score                                    |
+| `design`          | Run only the focused UI design diagnostics                       |

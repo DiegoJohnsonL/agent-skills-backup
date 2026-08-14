@@ -1,9 +1,16 @@
 ---
 name: vercel-blob
-description: Deep implementation guide for Vercel Blob object storage — upload flows, access control, troubleshooting.
+description: >-
+  Covers integrating Vercel Blob object storage (@vercel/blob) into Next.js and other Vercel apps:
+  server-side uploads with put, client-side uploads via presigned client upload tokens, listing,
+  downloading and deleting blobs, streaming and multipart uploads for large files, public versus
+  private access, content-type and caching settings, and automatic CDN delivery. Use when adding
+  file, image, PDF or video uploads to a Next.js app, handling user-generated content such as
+  avatars and attachments, building file management features, migrating from Cloudflare R2 to
+  Vercel Blob, or hitting errors like BLOB_READ_WRITE_TOKEN is not defined, file size limit
+  exceeded, client upload token failures, filename collisions, upload timeouts, or blobs that fail
+  to delete.
 license: MIT
-disable-model-invocation: true
-user-invocable: true
 ---
 
 # Vercel Blob (Object Storage)

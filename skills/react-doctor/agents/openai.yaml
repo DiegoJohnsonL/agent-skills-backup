@@ -1,7 +1,0 @@
-interface:
-  display_name: "React Doctor"
-  short_description: "Run React codebase diagnostics and triage"
-  default_prompt: "Use $react-doctor to scan and triage this React codebase."
-
-policy:
-  allow_implicit_invocation: false
