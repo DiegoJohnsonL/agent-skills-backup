@@ -1,11 +1,13 @@
 ---
 name: quality-code
-description: Use when writing or reviewing TypeScript/full-stack code, writing tests, or adding logging/observability.
+description: Use when writing or reviewing TypeScript — typing a schema or API surface, refactoring types, or writing tests.
 ---
 
 # Writing quality full-stack TypeScript
 
-When reviewing, check the code against every section below.
+Every section below binds every change: apply each one while writing, check the code against each one while reviewing.
+
+Type every value precisely. Where a value is genuinely unknown, take `unknown` at the boundary and narrow it.
 
 ## Make impossible states unrepresentable
 
@@ -26,6 +28,8 @@ function parsePhone(input: string): PhoneNumber {
 
 If the project already uses a library with native branded-type support (e.g. Effect), use its primitives.
 
+For a library or shared code that shouldn't pick a validator, accept `StandardSchemaV1<unknown, T>` at the boundary.
+
 ### Discriminated unions over flag bags
 
 ```ts
@@ -35,6 +39,10 @@ type State =
   | { status: "success"; user: User }
   | { status: "error"; error: string };
 ```
+
+### Options objects over positional args
+
+`sendEmail({ to, body })` — with positional strings, swapped args still compile. Skip only on hot perf-critical paths.
 
 ## Let the types flow end-to-end
 
@@ -46,14 +54,6 @@ Derive types instead of restating them — reach for `Pick`, `Omit`, `Parameters
 type User = Awaited<ReturnType<typeof db.query.users.findFirst>>;
 function renderUser(u: Pick<User, "id" | "email">) {}
 ```
-
-## Options objects over positional args
-
-`sendEmail({ to, body })` — with positional strings, swapped args still compile. Skip only on hot perf-critical paths.
-
-## Standard Schema for shared validation
-
-For libraries or code that shouldn't pick a validator, accept `StandardSchemaV1<unknown, T>`.
 
 ## Tests as real as possible
 

@@ -109,15 +109,6 @@
       "installedAt": "2026-03-13T19:18:45.905Z",
       "updatedAt": "2026-06-25T21:42:27.534Z"
     },
-    "quality-code": {
-      "source": "RhysSullivan/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/RhysSullivan/skills.git",
-      "skillPath": "skills/quality-code/SKILL.md",
-      "skillFolderHash": "b2b0ea02835b97ca76dd7c419841bcab95f713ef",
-      "installedAt": "2026-04-27T15:46:46.188Z",
-      "updatedAt": "2026-04-27T15:46:46.188Z"
-    },
     "trpc-router": {
       "source": "trpc/trpc",
       "sourceType": "github",

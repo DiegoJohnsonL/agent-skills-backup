@@ -1,7 +1,9 @@
 ---
 name: vercel-blob
-description: Guidance for integrating Vercel Blob object storage in Vercel and Next.js apps. Use when implementing secure file uploads (server or client token flows), managing media/documents, listing/downloading/deleting blobs, configuring public or private access, and troubleshooting issues such as missing BLOB_READ_WRITE_TOKEN, client upload token failures, or file-size limits.
+description: Deep implementation guide for Vercel Blob object storage — upload flows, access control, troubleshooting.
 license: MIT
+disable-model-invocation: true
+user-invocable: true
 ---
 
 # Vercel Blob (Object Storage)
