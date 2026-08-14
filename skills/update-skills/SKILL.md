@@ -20,10 +20,11 @@ CLI behavior, verified on v1.5.22: `update` matches skills by installed name and
 
 3. **Dedup against the Vercel plugin.** Claude Code gets `vercel:*` skills from the `vercel` plugin, so the library copies duplicate them in Claude only; Codex has no plugin and reads them from `~/.agents`. Remove the Claude symlink for each of: `ai-sdk`, `chat-sdk`, `shadcn`, `workflow`, `vercel-cli`, `vercel-react-best-practices`. Keep `vercel-blob` (the plugin's `vercel-storage` overlaps it only partially) and keep every library copy in `~/.agents/skills`. Done when none of the six names is present in `~/.claude/skills`.
 
-4. **Find the skipped.** Run `git diff .skill-lock.json`. Every skill whose `updatedAt` stayed unchanged was skipped: upstream renamed, moved, or deleted it. Done when every unchanged entry is on your list — sweep the whole lock file, all sources.
+4. **Find the untouched.** Run `git diff .skill-lock.json`. A skill whose `updatedAt` stayed unchanged is either already current or silently skipped as broken — the diff alone cannot tell them apart. Done when every unchanged entry is on your list — sweep the whole lock file, all sources.
 
-5. **Classify each skipped skill** by listing its upstream `SKILL.md` paths:
-   `gh api "repos/<source>/git/trees/HEAD?recursive=1" --jq '.tree[] | select(.path | endswith("SKILL.md")) | .path'`
+5. **Classify each untouched skill** against its upstream tree:
+   `gh api "repos/<source>/git/trees/HEAD?recursive=1" --jq '.tree[]'`
+   - Folder still at the lock's `skillPath` and its tree `sha` equals the lock's `skillFolderHash` → **current**: drop it from the list.
    - Same folder name under a new path → **moved**: reinstall by name.
    - Folder gone, a new folder covers the same job (check the repo's release notes and compare view for remove/add pairs) → **renamed**: install the new name, delete the old.
    - Folder gone with no successor → **removed**: delete it.
