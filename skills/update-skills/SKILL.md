@@ -16,7 +16,7 @@ CLI behavior, verified on v1.5.22: `update` matches skills by installed name and
 
 1. **Baseline.** In `~/.agents`, commit all pending changes. Done when `git status` is clean.
 
-2. **Update.** Run `npx -y skills@latest update --global --yes` from `~/.agents`.
+2. **Update.** Run `npx -y skills@latest update --global --yes` from `~/.agents`. The CLI overwrites each refreshed `SKILL.md` wholesale and drops any frontmatter you added by hand. Restore `disable-model-invocation: true` under `description:` in `~/.agents/skills/unslop/SKILL.md`. `AGENTS.md` imports that skill, so its description must stay out of the model's skill listing. Done when the update finishes and that line is present.
 
 3. **Dedup against the Vercel plugin.** Claude Code gets `vercel:*` skills from the `vercel` plugin, so the library copies duplicate them in Claude only; Codex has no plugin and reads them from `~/.agents`. Remove the Claude symlink for each of: `ai-sdk`, `chat-sdk`, `shadcn`, `workflow`, `vercel-cli`, `vercel-react-best-practices`. Keep `vercel-blob` (the plugin's `vercel-storage` overlaps it only partially) and keep every library copy in `~/.agents/skills`. Done when none of the six names is present in `~/.claude/skills`.
 

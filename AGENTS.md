@@ -20,3 +20,8 @@
 - PRs should be simple and easy to understand. Descriptions open with a minimal clear statement of the problem, then how you solved it.
 - Add a blurb at the end of the PR description about what model and harness made the change.
 - Rebase onto the latest base branch before opening. Stale branches conflict and waste a review round.
+
+## Writing
+- Apply the unslop rules below to everything you write: chat replies, commit messages, PR descriptions, docs, and comments.
+
+@~/.agents/skills/unslop/SKILL.md
