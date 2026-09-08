@@ -69,9 +69,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel/vercel.git",
       "skillPath": "skills/vercel-cli/SKILL.md",
-      "skillFolderHash": "d1e4c706957ead4b2268d6bf03d41dd7aef47182",
+      "skillFolderHash": "99e54d3ab28a4db88b5adf9b3742ac50676318de",
       "installedAt": "2026-02-24T16:12:21.517Z",
-      "updatedAt": "2026-08-23T21:55:13.368Z"
+      "updatedAt": "2026-09-08T23:54:28.698Z"
     },
     "workflow": {
       "source": "vercel/workflow",
@@ -96,18 +96,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/shadcn/ui.git",
       "skillPath": "skills/shadcn/SKILL.md",
-      "skillFolderHash": "0a31c3c2535a62b22bf23a1b10a142178a6b7dbf",
+      "skillFolderHash": "b5791523e07794a4deb201e78eab3f3adbd022c0",
       "installedAt": "2026-03-08T05:58:03.430Z",
-      "updatedAt": "2026-08-14T03:11:58.910Z"
+      "updatedAt": "2026-09-08T23:54:32.640Z"
     },
     "turborepo": {
       "source": "vercel/turborepo",
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel/turborepo.git",
       "skillPath": "skills/turborepo/SKILL.md",
-      "skillFolderHash": "565aa926118630c68c43852fd08449d9265d09ed",
+      "skillFolderHash": "efd08cc6e8d5fbcaf10815c8ee2f67d34dd1d67a",
       "installedAt": "2026-03-13T19:18:45.905Z",
-      "updatedAt": "2026-08-23T21:55:17.176Z"
+      "updatedAt": "2026-09-08T23:54:34.982Z"
     },
     "trpc-router": {
       "source": "trpc/trpc",
@@ -132,10 +132,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/frontend-design/SKILL.md",
-      "skillFolderHash": "0d5b74a14bdf3ebcd64f352d06376a2ef05ed296",
-      "pluginName": "example-skills",
+      "skillFolderHash": "d79e2a5bb4df4a386c2adcdd9ab8709bba28c3f6",
       "installedAt": "2026-06-18T19:41:06.785Z",
-      "updatedAt": "2026-06-18T19:41:06.785Z"
+      "updatedAt": "2026-09-08T23:54:36.910Z"
     },
     "email-sdk": {
       "source": "opencoredev/email-sdk",
@@ -367,9 +366,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
       "skillPath": "skills/agent-browser/SKILL.md",
-      "skillFolderHash": "037e8078db4b20b4aa25c04f21c6de7d335ec449",
+      "skillFolderHash": "82def67855a0d2aad7794207951820fa5422fdb0",
       "installedAt": "2026-07-19T18:47:23.133Z",
-      "updatedAt": "2026-07-19T18:47:23.133Z"
+      "updatedAt": "2026-09-08T23:54:38.365Z"
     },
     "writing-for-agents": {
       "source": "mattpocock/skills",
