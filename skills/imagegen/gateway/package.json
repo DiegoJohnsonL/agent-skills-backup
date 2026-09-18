@@ -1,9 +1,0 @@
-{
-  "name": "imagegen-gateway",
-  "private": true,
-  "type": "module",
-  "description": "Self-contained AI Gateway image generate/edit runner for the imagegen skill. Repo-agnostic: owns its own node_modules so it resolves `ai` from any working directory.",
-  "dependencies": {
-    "ai": "^7.0.9"
-  }
-}
