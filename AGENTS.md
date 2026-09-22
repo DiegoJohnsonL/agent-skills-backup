@@ -1,5 +1,5 @@
 ## Code
-- Names and structure carry the explanation, so files read comment-free. A comment earns its line only by stating what the code cannot show: an invariant, an external system's quirk.
+- Write self-explanatory code: names and structure carry the explanation, so files read comment-free. A comment earns its line only by stating a constraint the code cannot show, an invariant or an external system's quirk. Test every comment before keeping it: delete it, and if the code still says everything, it stays deleted.
 - Choose the simplest implementation that fully meets the current requirements. Avoid speculative abstractions, configuration, and indirection.
 - Do not preserve backward compatibility. Remove obsolete paths instead of adding compatibility layers, fallbacks, or migrations.
 - Prefer established, well-maintained libraries when they reduce overall complexity or improve reliability. Lean on the dependencies already in the project before writing your own implementation or adding packages, and check a library's documentation and types before assuming it lacks a capability.
