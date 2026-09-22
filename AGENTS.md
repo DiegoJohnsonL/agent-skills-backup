@@ -1,5 +1,5 @@
 ## Code
-- Write self-explanatory code: names and structure carry the explanation, so files read comment-free. A comment earns its line only by stating a constraint the code cannot show — an invariant, an external system's quirk. Test every comment before keeping it: delete it; if the code still says everything, it stays deleted.
+- Write self-explanatory code: names and structure carry the explanation, so files read comment-free. A comment earns its line only by stating a constraint the code cannot show, an invariant or an external system's quirk. Test every comment before keeping it: delete it, and if the code still says everything, it stays deleted.
 - Choose the simplest implementation that fully meets the current requirements. Avoid speculative abstractions, configuration, and indirection.
 - Do not preserve backward compatibility. Remove obsolete paths instead of adding compatibility layers, fallbacks, or migrations.
 - Prefer established, well-maintained libraries when they reduce overall complexity or improve reliability. Lean on the dependencies already in the project before writing your own implementation or adding packages, and check a library's documentation and types before assuming it lacks a capability.
@@ -96,54 +96,8 @@ Removing patterns is half the job. Sterile, voiceless writing is just as obvious
 31. **Prefer the plain word.** "utilize" becomes "use", "leverage" becomes "use", "facilitate" becomes "help", "numerous" becomes "many", "in the event that" becomes "if". The fancier synonym is rarely clearer.
 
 ## TypeScript
-Type every value precisely. Where a value is genuinely unknown, take `unknown` at the boundary and narrow it.
-
-### Make impossible states unrepresentable
-
-Use the type system to make invalid states fail at compile time. Fewer reachable states = easier code to read and change.
-
-#### Branded types — parse, don't validate
-
-Brand primitives at the boundary; downstream code trusts the type.
-
-```ts
-type PhoneNumber = string & { __brand: "PhoneNumber" };
-
-function parsePhone(input: string): PhoneNumber {
-  if (!/^\+?\d{10,15}$/.test(input)) throw new Error(`Invalid: ${input}`);
-  return input as PhoneNumber;
-}
-```
-
-If the project already uses a library with native branded-type support (e.g. Effect), use its primitives.
-
-For a library or shared code that shouldn't pick a validator, accept `StandardSchemaV1<unknown, T>` at the boundary.
-
-#### Discriminated unions over flag bags
-
-```ts
-// { loading: boolean; user?: User; error?: string } — invalid combos representable
-type State =
-  | { status: "loading" }
-  | { status: "success"; user: User }
-  | { status: "error"; error: string };
-```
-
-#### Options objects over positional args
-
-`sendEmail({ to, body })` — with positional strings, swapped args still compile. Skip only on hot perf-critical paths.
-
-### Let the types flow end-to-end
-
-DB schema → server → client share types through the project's end-to-end tool (tRPC, oRPC, Elysia, TanStack Start). A `users.email` branded as `Email` arrives on the client still branded.
-
-Derive types instead of restating them — reach for `Pick`, `Omit`, `Parameters`, `ReturnType`, `Awaited`, `typeof` before writing a new interface:
-
-```ts
-type User = Awaited<ReturnType<typeof db.query.users.findFirst>>;
-function renderUser(u: Pick<User, "id" | "email">) {}
-```
-
-### Tests as real as possible
-
-Spin up real services: LocalStack for AWS, Miniflare for Cloudflare Workers, real Postgres/SQLite (e.g. `bun:sqlite`). Mock only third-party services that have no test environment.
+- Type every value precisely. Take `unknown` at the boundary and narrow it.
+- Make impossible states unrepresentable: discriminated unions over flag bags, branded types parsed at the boundary (parse, don't validate). Use the project's own primitives when it has them (e.g. Effect); shared code that shouldn't pick a validator accepts `StandardSchemaV1<unknown, T>`.
+- Options objects over positional args: `sendEmail({ to, body })`. With positional strings, swapped args still compile. Skip only on hot perf-critical paths.
+- Let types flow end to end through the project's tool (tRPC, oRPC, Elysia, TanStack Start). Derive with `Pick`, `Omit`, `ReturnType`, `Awaited`, `typeof` before writing a new interface.
+- Tests as real as possible: real Postgres/SQLite, LocalStack, Miniflare. Mock only third parties with no test environment.
